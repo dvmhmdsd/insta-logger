@@ -1,0 +1,21 @@
+{
+  "name": "insta-logger",
+  "version": "1.0.0",
+  "description": "Instatus logger that logs activities and list it",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "logs",
+    "instatus",
+    "instalogger"
+  ],
+  "author": "Mohamed Saad",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "typescript": "^5.5.2"
+  }
+}
