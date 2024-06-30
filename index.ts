@@ -17,6 +17,7 @@ export class InstaLog implements InstaLogger {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${this.access_token}`,
+        Connector: "3rd Party",
       },
       body: JSON.stringify(event),
     });
@@ -39,6 +40,7 @@ export class InstaLog implements InstaLogger {
       `${this.API_URL}?${this.generateFiltersQuery(filters)}`,
       {
         headers: {
+          Connector: "3rd Party",
           Authorization: `Bearer ${this.access_token}`,
         },
       }
