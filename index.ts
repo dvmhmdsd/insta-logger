@@ -55,6 +55,7 @@ export class InstaLog implements InstaLogger {
     if (!filters) {
       return "";
     }
+    if (!filters.page) filters.page = 1;
     return Object.entries(filters)
       .map(([key, value]) => `${key}=${value}`)
       .join("&");
